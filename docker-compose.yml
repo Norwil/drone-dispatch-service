@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  drone-db:
+    image: postgres:15-alpine
+    container_name: drone-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  weather-redis:
+    image: redis:alpine
+    container_name: weather-redis
+    ports:
+      - "6379:6379"
+
+volumes:
+  postgres_data:

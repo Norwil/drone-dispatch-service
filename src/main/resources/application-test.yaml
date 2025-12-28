@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: drone-dispatch-service
+
+  datasource:
+    url: jdbc:h2:mem:dronedb
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+
+  h2:
+    console:
+      enabled: true
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
+
+server:
+  port: 8081
+
+# Drone Rules Configuration
+drone:
+  rules:
+    max-range-km: 100.0
+    max-wind-speed: 30.0
+    min-temperature: -10.0
+    storm-code-threshold: 50
+
+# Weather API
+weather:
+  service:
+  url: ${WEATHER_SERVICE_URL:http://localhost:8080}
