@@ -1,4 +1,4 @@
-package com.interview.prep.drone_dispatch_service;
+package com.interview.prep.drone_dispatch_service.service;
 
 import com.interview.prep.drone_dispatch_service.client.WeatherServiceClient;
 import com.interview.prep.drone_dispatch_service.exception.WeatherServiceException;
