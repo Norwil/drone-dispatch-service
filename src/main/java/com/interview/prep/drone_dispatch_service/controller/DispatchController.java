@@ -4,7 +4,6 @@ import com.interview.prep.drone_dispatch_service.dto.DispatchHistoryResponse;
 import com.interview.prep.drone_dispatch_service.dto.DispatchRequest;
 import com.interview.prep.drone_dispatch_service.dto.DispatchResponse;
 import com.interview.prep.drone_dispatch_service.dto.DroneResponse;
-import com.interview.prep.drone_dispatch_service.entity.Drone;
 import com.interview.prep.drone_dispatch_service.service.DispatchService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
