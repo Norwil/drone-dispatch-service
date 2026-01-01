@@ -1,4 +1,4 @@
-package com.interview.prep.drone_dispatch_service;
+package com.interview.prep.drone_dispatch_service.service;
 
 import com.interview.prep.drone_dispatch_service.client.WeatherServiceClient;
 import com.interview.prep.drone_dispatch_service.config.DroneConfigProperties;
@@ -8,7 +8,6 @@ import com.interview.prep.drone_dispatch_service.dto.WeatherApiResponse;
 import com.interview.prep.drone_dispatch_service.entity.*;
 import com.interview.prep.drone_dispatch_service.repository.DispatchRepository;
 import com.interview.prep.drone_dispatch_service.repository.DroneRepository;
-import com.interview.prep.drone_dispatch_service.service.DispatchService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
